@@ -1,0 +1,242 @@
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+
+    .container-m {
+        max-width: 900px;
+    }
+}
+
+
+@media only screen and (max-width: 950px) {
+    html {
+        font-size: 50%;
+    }
+
+    .container-m {
+        max-width: 750px;
+    }
+
+    .header__top,
+    .header__sticky {
+        display: none;
+    }
+
+    .header__center-right ul li:not(:last-of-type) {
+        display: none;
+    }
+
+    .header__center-left {
+        display: none;
+    }
+
+    .btn-mobile-menu {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .container-m {
+        max-width: 650px;
+    }
+
+    .banner .item {
+        height: 40rem;
+    }
+
+    .catalog__wrapper .catalog__item:last-child {
+        display: none;
+    }
+
+    .essenstial__wrapper {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .banner-2__title a {
+        font-size: 4rem;
+    }
+
+    .brand__lists {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .journal__items .journal__item:last-child {
+        display: none;
+    }
+
+    .fixedMenuShopPage {
+        
+        
+        width: 20rem;
+        
+    }
+
+    .main-body__wrapper {
+        flex-direction: column;
+    }
+
+    .product-detail__wrapper {
+        flex-direction: column;
+    }
+
+    .lists-item-together {
+        flex-wrap: wrap;
+    }
+
+    .form-check {
+        flex: 0 0 50%;
+        padding: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .container-m {
+        max-width: 550px;
+    }
+
+    .banner .item {
+        height: 30rem;
+    }
+
+    .footer__top {
+        flex-wrap: wrap;
+    }
+    .footer__new,
+    .footer__menu,
+    .footer__about,
+    .footer__follow {
+        flex: 0 0 45%;
+        text-align: center;
+    }
+    .footer__menu {
+        margin: 0;
+    }
+
+    .product-detail-tab {
+        display: none;
+    }
+    .lists-unstyled {
+        display: none;
+    }
+    .table-infomation {
+        margin: 0;
+    }
+    .infomation-description {
+        margin: 0;
+        flex-direction: column;
+    }
+.tab-pane-m__wrapper {
+    margin: 0;
+}
+    .box-tab-pane {
+        margin: 0;
+    }
+
+    .form-name-email {
+        flex-direction: column;
+    }
+
+    .review-item {
+        gap: 1rem;
+    }
+
+    .review-item-avatar {
+        width: 40rem;
+    }
+.box-tab-pane-title {
+    margin-bottom: 1.5rem;
+}
+    .box-tab-pane-content {
+        border: 1px solid #e4e4e4;
+        margin-bottom: 2.5rem;
+        padding: 1.5rem;
+    }
+
+    .description-text {
+        margin: 1rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .container-m {
+        max-width: 530px;
+        padding: 0 5rem;
+    }
+    .owl-carousel .owl-item img {
+        height: 100%;
+    }
+
+    .catalog__wrapper {
+        flex-wrap: wrap;
+
+    }
+
+    .catalog__wrapper .catalog__item:last-child {
+        display: block;
+    }
+    .catalog__item {
+       flex: 0 0 100%;
+    }
+    .essenstial__wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .brand__lists {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .journal__items .journal__item:last-child {
+        display: block;
+    }
+    .journal__items {
+        flex-wrap: wrap;
+    }
+    .journal__items .journal__item {
+        flex: 0 0 100%;
+    }
+    .footer__new,
+    .footer__menu,
+    .footer__about,
+    .footer__follow {
+        flex: 0 0 100%;
+        text-align: start;
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .banner .item p {
+        font-size: 1.4rem;
+        left: 3rem;
+    }
+
+    .banner-2__content {
+        padding: 2rem;
+    }
+    .banner-2__title-small {
+        font-size: 1.5rem;
+    }
+    .banner-2__title a {
+        font-size: 2.5rem;
+    }
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .body-right__card {
+        flex-direction: column;
+    }
+    .btn-content-cart {
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-check {
+        flex: 0 0 100%;
+        padding: 1.5rem;
+    }
+
+    .description-text {
+        margin: .5rem;
+    }
+}
