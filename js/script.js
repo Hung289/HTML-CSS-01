@@ -65,7 +65,7 @@ window.onload = function () {
             menuSidebar.classList.remove("show");
         };
     }
-
+    
     var prevScrollPos = window.pageYOffset;
     window.onscroll = function () {
         var currentScrollPos = window.pageYOffset;
@@ -81,6 +81,7 @@ window.onload = function () {
         if (checkHeightSidebarMenuShopPage === "function") {
             checkHeightSidebarMenuShopPage();
         }
+        
     };
     //Sticky menu
     //element stickey menu
@@ -190,16 +191,17 @@ window.onload = function () {
             });
         }
     }
-
+    
     //Tab nav product page
     const tabPane = document.querySelectorAll(".tab-pane-m");
     const tabLinks = document.querySelectorAll(".tabLinks");
     const tabLinksMobile = document.querySelectorAll('.box-tab-pane-title')
     const tabPaneContentMobile = document.querySelectorAll('.box-tab-pane-content')
     //Vùa vào thì ẩn tất cả các tab
-
-    if(window.screenX > 670) {
-        if (tabPane != null) {
+    
+    
+    if(window.innerWidth > 670) {
+        if (tabPane !== null) {
             for (let i = 0; i < tabPane.length; i++) {
     
                 tabPane[0].style.display = "block"
@@ -207,6 +209,14 @@ window.onload = function () {
                 element.style.display = "none";
             }
         }
+
+        if(tabLinksMobile !== null) {
+            for (let i = 0; i < tabLinksMobile.length; i++) {
+                const element = tabLinksMobile[i];
+                element.style.display = "none"
+            }
+        }
+
         let prevActive2 = null;
         for (let i = 0; i < tabLinks.length; i++) {
             const element = tabLinks[i];
@@ -228,6 +238,12 @@ window.onload = function () {
         }
     }else {
         //Vừa vào ẩn 2 tab dưới và show tab treên cùng
+        if(tabLinksMobile !== null) {
+            for (let i = 0; i < tabLinksMobile.length; i++) {
+                const element = tabLinksMobile[i];
+                element.style.display = "block"
+            }
+        }
         if(tabPaneContentMobile !== null) {
             for (let i = 0; i < tabPaneContentMobile.length; i++) {
                 const element = tabPaneContentMobile[i];
